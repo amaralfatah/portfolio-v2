@@ -24,15 +24,15 @@ class ComponentLoader {
     const currentPath = window.location.pathname;
     const pageName = currentPath.split("/").pop() || "index.html";
 
-    // Select only the navigation menu links (excluding the logo)
-    const navLinks = document.querySelectorAll("#nav-menu a");
+    // Select navigation links from both header and footer
+    const navLinks = document.querySelectorAll("#nav-menu a, footer nav a");
 
     navLinks.forEach((link) => {
       // Remove all active classes first
       link.classList.remove("active");
       link.className = link.className.replace(
         "text-[#48CAE4]",
-        "text-gray-700"
+        "text-gray-300"
       );
 
       // Get the href and extract just the filename
@@ -48,7 +48,7 @@ class ComponentLoader {
         link.classList.add("active");
         // Update text color for active state
         link.className = link.className.replace(
-          "text-gray-700",
+          "text-gray-300",
           "text-[#48CAE4]"
         );
       }

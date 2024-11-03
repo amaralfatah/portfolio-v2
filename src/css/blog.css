@@ -1,7 +1,7 @@
 
 
-/* Custom CSS for truncating text */
-.paraf {
+/* /src/css/blog.css */
+/* .paraf {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
@@ -42,4 +42,4 @@
 
 .animate-spin {
     animation: spin 1s linear infinite;
-}
+} */
