@@ -78,9 +78,10 @@ const tech = [
 const tools = [
   {
     id: 1,
-    name: "Git",
-    imageUrl: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
-    status: "Version Control",
+    name: "VSCode",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png",
+    status: "Code Editor",
   },
   {
     id: 2,
@@ -90,10 +91,10 @@ const tools = [
   },
   {
     id: 3,
-    name: "NPM",
+    name: "Android Studio",
     imageUrl:
-      "https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png",
-    status: "Package Manager",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/2048px-Android_Studio_icon_%282023%29.svg.png",
+    status: "Code Editor",
   },
   {
     id: 4,
