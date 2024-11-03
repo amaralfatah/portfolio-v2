@@ -24,31 +24,33 @@ class ComponentLoader {
     const currentPath = window.location.pathname;
     const pageName = currentPath.split("/").pop() || "index.html";
 
-    // Select all navigation links
-    const navLinks = document.querySelectorAll("nav a");
+    // Select only the navigation menu links (excluding the logo)
+    const navLinks = document.querySelectorAll("#nav-menu a");
 
     navLinks.forEach((link) => {
       // Remove all active classes first
       link.classList.remove("active");
       link.className = link.className.replace(
         "text-[#48CAE4]",
-        "text-gray-300"
+        "text-gray-700"
       );
 
       // Get the href and extract just the filename
       const linkPath = link.getAttribute("href");
       const linkPage = linkPath.split("/").pop();
 
-      // Compare current page with link's target page
-      if (pageName === linkPage) {
+      // Compare current page with link's target page, handling home page special case
+      if (
+        pageName === linkPage ||
+        (pageName === "index.html" &&
+          (linkPath === "/" || linkPath === "index.html"))
+      ) {
         link.classList.add("active");
-        // For mobile footer
-        if (link.closest("footer")) {
-          link.className = link.className.replace(
-            "text-gray-300",
-            "text-[#48CAE4]"
-          );
-        }
+        // Update text color for active state
+        link.className = link.className.replace(
+          "text-gray-700",
+          "text-[#48CAE4]"
+        );
       }
     });
   }
