@@ -1,7 +1,7 @@
 const baseUrl =
   window.location.hostname === "127.0.0.1"
-    ? "http://127.0.0.1:5500/"
-    : "https://amar.my.id/portfolio-v2/";
+    ? "http://127.0.0.1:5500/" // url local saat dijalankan di local atau menggunakan extension Live Server
+    : "https://amar.my.id/portfolio-v2/"; // url saat di deploy
 
 // Fungsi untuk memperbarui semua URL
 const updateUrls = (selector, attr = "href") => {

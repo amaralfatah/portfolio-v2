@@ -1,0 +1,8 @@
+Cara menjalankan website ini:
+1 - intall extension live server
+2 - buka src/js/base_url.js
+3 - sesuaikan url local live server
+
+Cara menjalakan tailwind:
+1 - buka terminal (ctrl + `)
+2 - jalakan perintah "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch" tanpa tanda petik
