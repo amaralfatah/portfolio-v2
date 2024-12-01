@@ -60,10 +60,10 @@ class ComponentLoader {
 document.addEventListener("DOMContentLoaded", async () => {
   await ComponentLoader.loadComponent(
     "header-container",
-    "../../components/header.html"
+    "../../src/components/header.html"
   );
   await ComponentLoader.loadComponent(
     "footer-container",
-    "../../components/footer.html"
+    "../../src/components/footer.html"
   );
 });
