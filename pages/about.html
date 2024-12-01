@@ -11,14 +11,50 @@
     <link rel="stylesheet" href="../src/css/animations.css">
     <link rel="icon" type="image/png" href="../src/img/avatar_circle.png">
 
-    <!-- Javascript -->
-    <script src="../src/js/component-loader.js"></script>
 </head>
 
 <body>
 
     <!-- Header Navigation -->
-    <div id="header-container"></div>
+    <header class="max-w-7xl mx-auto flex flex-col relative">
+        <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen backdrop-blur-md bg-opacity-80">
+            <div class="container mx-auto flex flex-wrap items-center justify-between">
+                <!-- Logo link (excluded from active state) -->
+                <a href="/" class="flex">
+                    <span class="self-center text-lg text-[#48CAE4] font-semibold whitespace-nowrap hover:text-[#CAF0F8]">
+                        amaralfatah
+                    </span>
+                </a>
+                <div class="flex md:order-2 fadein-bot">
+                    <a href="https://github.com/amaralfatah">
+                        <img class="w-9 rounded-full"
+                            src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github">
+                    </a>
+                </div>
+                <!-- Navigation menu -->
+                <div class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1" id="mobile-menu-3">
+                    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium" id="nav-menu">
+                        <li>
+                            <a href="/"
+                                class=" text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 transition-colors duration-200">Home</a>
+                        </li>
+                        <li>
+                            <a href="/pages/about.html"
+                                class="active text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 transition-colors duration-200">About</a>
+                        </li>
+                        <li>
+                            <a href="/pages/portfolio.html"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 transition-colors duration-200">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="/pages/blog.html"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 transition-colors duration-200">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- Placeholder for Page Content -->
     <div class="md:mt-[100px] max-w-7xl mx-auto">
@@ -91,7 +127,26 @@
     </div>
 
     <!-- Footer Navigation (Mobile Only) -->
-    <div id="footer-container"></div>
+    <footer
+        class="block md:hidden fixed bottom-0 left-0 right-0 rounded-t-3xl border border-[#383838] bg-[#121212] bg-opacity-80 backdrop-blur-md backdrop-opacity-90">
+        <nav class="flex justify-around py-4 text-xs">
+            <a href="/index.html" class="flex flex-col items-center text-gray-300 hover:text-[#48CAE4] transition-colors">
+                <span>Home</span>
+            </a>
+            <a href="/pages/about.html"
+                class="active flex flex-col items-center text-gray-300 hover:text-[#48CAE4] transition-colors">
+                <span>About</span>
+            </a>
+            <a href="/pages/portfolio.html"
+                class="flex flex-col items-center text-gray-300 hover:text-[#48CAE4] transition-colors">
+                <span>Portfolio</span>
+            </a>
+            <a href="/pages/blog.html"
+                class="flex flex-col items-center text-gray-300 hover:text-[#48CAE4] transition-colors">
+                <span>Blog</span>
+            </a>
+        </nav>
+    </footer>
     
     <!-- Javascript -->
     <script src="../src/js/about.js"></script>
